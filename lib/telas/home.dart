@@ -46,6 +46,11 @@ class _HomeState extends State<Home> {
 
             ),
             SliverToBoxAdapter(
+              child: AreaCriarPostagem(
+                usuario: ,
+              )
+            ),
+            SliverToBoxAdapter(
               child: Container(
                 height: 1600,
                 color: Colors.red,
