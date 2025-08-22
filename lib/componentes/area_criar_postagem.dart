@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:facebook_interface/modelos/usuario.dart';
 
 
 class AreaCriarPostagem extends StatelessWidget {

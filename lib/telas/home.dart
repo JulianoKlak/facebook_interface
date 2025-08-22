@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import '../uteis/paleta_cores.dart'; // importa a paleta de cores
 import 'package:line_icons/line_icons.dart'; // importa os ícones
 import '../componentes/botao_circulo.dart'; // importa o botão circular
+import '../componentes/area_criar_postagem.dart'; // importa a área de criação de postagem
+import '../modelos/usuario.dart'; // importa o modelo de usuário
+import '../dados/dados.dart'; // importa os dados, incluindo o usuário atual
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -21,7 +24,7 @@ class _HomeState extends State<Home> {
                 backgroundColor: Colors.white,
                 // expandedHeight: 250,
                 floating: true,
-                centeredTitle: false,
+                centerTitle: false,
                 title: const Text(
                     'facebook',
                     style: TextStyle(
@@ -47,7 +50,7 @@ class _HomeState extends State<Home> {
             ),
             SliverToBoxAdapter(
               child: AreaCriarPostagem(
-                usuario: ,
+                usuario: usuarioAtual,
               )
             ),
             SliverToBoxAdapter(
