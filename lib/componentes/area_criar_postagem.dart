@@ -42,6 +42,7 @@ class AreaCriarPostagem extends StatelessWidget {
           Container(
             height: 40,
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 TextButton.icon(
                   onPressed: (){},
