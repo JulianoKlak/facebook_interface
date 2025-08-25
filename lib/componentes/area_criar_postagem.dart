@@ -52,6 +52,7 @@ class AreaCriarPostagem extends StatelessWidget {
                     ) // textstyle
                   ), //text
                 ), // textButton.icon
+                VerticalDivider(width: 8,),
                 TextButton.icon(
                   onPressed: (){},
                   icon: Icon(Icons.photo_library, color: Colors.green,),
@@ -61,6 +62,7 @@ class AreaCriarPostagem extends StatelessWidget {
                     ) // textstyle
                   ), //text
                 ), // textButton.icon
+                VerticalDivider(width: 8,),
                 TextButton.icon(
                   onPressed: (){},
                   icon: Icon(Icons.video_call, color: Colors.purple,),
