@@ -24,8 +24,24 @@ class AreaStoria extends StatelessWidget {
             child: ListView.builder(
                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
                 scrollDirection: Axis.horizontal,
-                itemCount: estorias.length,
+                itemCount: 1 + estorias.length, //8 itens
                 itemBuilder: (context, indice) {
+
+                    if( indice == 0 ){
+
+                        Estoria estoriaUsuario = Estoria(
+                            usuario: usuario,
+                            urlImagem: usuario.urlImagem,
+                        );
+
+                        return Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 4),
+                            child: CartaoEstoria(
+                                estoria: estoriaUsuario,
+                            ),
+                        ); // padding
+
+                    }
 
                     Estoria estoria = estorias[indice];
 
