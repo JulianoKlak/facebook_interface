@@ -15,7 +15,41 @@ class AreaStoria extends StatelessWidget {
 
     @override
     Widget build(BuildContext context) {
-        return Container();
+        return Container(
+            height: 200,
+            color: Colors.orange,
+            child: ListView.builder(
+                itemCount: estorias.length,
+                itemBuilder: (context, indice) {
+
+                    Estoria estoria = estorias[indice];
+
+                    return Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 4),
+                        child: CartaoEstoria(
+                            estoria: estoria,
+                        ),
+                    ); // padding
+                }, //listview.builder
+                
+            ), // container
+        );
     }
 }
 
+class CartaoEstoria extends StatelessWidget {
+
+    final Estoria estoria;
+
+    const CartaoEstoria({
+        Key? key,
+        required this.estoria
+        }) : super(key: key);
+
+    @override
+    Widget build (BuildContext context) {
+        return Container(
+
+        );
+    }
+}
