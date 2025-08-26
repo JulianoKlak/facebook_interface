@@ -20,8 +20,10 @@ class AreaStoria extends StatelessWidget {
     Widget build(BuildContext context) {
         return Container(
             height: 200,
-            color: Colors.orange,
+            color: Colors.white,
             child: ListView.builder(
+                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                scrollDirection: Axis.horizontal,
                 itemCount: estorias.length,
                 itemBuilder: (context, indice) {
 
@@ -54,6 +56,7 @@ class CartaoEstoria extends StatelessWidget {
         return Stack(
             children: [
                 ClipRRect(
+                    borderRadius: BorderRadius.circular(12),
                     child: CachedNetworkImage(
                         imageUrl: estoria.urlImagem,
                         height: double.infinity,
