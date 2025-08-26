@@ -5,6 +5,8 @@ import '../componentes/botao_circulo.dart'; // importa o botão circular
 import '../componentes/area_criar_postagem.dart'; // importa a área de criação de postagem
 import '../modelos/usuario.dart'; // importa o modelo de usuário
 import '../dados/dados.dart'; // importa os dados, incluindo o usuário atual
+import '../modelos/estoria.dart'; // importa o modelo de estoria
+import '../componentes/area_estoria.dart'; // importa a área de estoria
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -54,10 +56,10 @@ class _HomeState extends State<Home> {
               ) //areacriarpostagem
             ), // slivertoboxadapter
             SliverPadding(
-              padding: EdgeInsets.fromLTBR(0, 10, 0, 5),
+              padding: EdgeInsets.fromLTRB(0, 10, 0, 5),
               sliver: SliverToBoxAdapter(
                 child: AreaStoria(
-                  usuarioAtual: usuarioAtual,
+                  usuario: usuarioAtual,
                   estorias: estorias,
                 ),
               )

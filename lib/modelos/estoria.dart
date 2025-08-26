@@ -8,7 +8,7 @@ class Estoria {
 
     Estoria({
         required this.usuario,
-        required this.urlImagem
+        required this.urlImagem,
         this.foiVisualizado = false,
     });
 

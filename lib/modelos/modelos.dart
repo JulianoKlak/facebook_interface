@@ -1,3 +1,3 @@
 export  'usuario.dart';
-export  'estoria.dart'
+export  'estoria.dart';
 

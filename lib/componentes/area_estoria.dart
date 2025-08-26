@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import '../modelos/usuario.dart';
+import '../modelos/estoria.dart';
+import 'package:cached_network_image/cached_network_image.dart'; // Para imagens com cache
 
 
 class AreaStoria extends StatelessWidget {
