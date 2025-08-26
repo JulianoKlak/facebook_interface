@@ -48,8 +48,17 @@ class CartaoEstoria extends StatelessWidget {
 
     @override
     Widget build (BuildContext context) {
-        return Container(
-
+        return Stack(
+            children: [
+                ClipRRect(
+                    child: CachedNetworkImage(
+                        imageUrl: estoria.urlImagem,
+                        height: double.infinity,
+                        width: 110,
+                        fit: BoxFit.cover,
+                    ),
+                ),
+            ]
         );
     }
 }
