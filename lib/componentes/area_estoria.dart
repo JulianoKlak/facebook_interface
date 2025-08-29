@@ -82,7 +82,7 @@ class CartaoEstoria extends StatelessWidget {
                         height: double.infinity,
                         width: 110,
                         fit: BoxFit.cover,
-                    ),
+                    ), // CachedNetworkImage
                 ), //clipRRect
                 Container(
                     height: double.infinity,
@@ -92,6 +92,27 @@ class CartaoEstoria extends StatelessWidget {
                         borderRadius: BorderRadius.circular(12),
                         ), // BoxDecoration
                     ), // container 
+                Positioned(
+                    top: 8,
+                    left: 8,
+                    child: adicionarEstoria
+                        ? Container(
+                            height: 40,
+                            width: 40,
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                shape: BoxShape.circle
+                            ), // BoxDecoration
+                            child: IconButton(
+                                padding: EdgeInsets.zero,
+                                icon: Icon(Icons.add),
+                                iconSize: 30,
+                                color: PaletaCores.azulFacebook,
+                                onPressed: (){},
+                            ), // IconButton
+                        ) // Container
+                        : Container()
+                ), // Positioned
             ] 
         );
     }
