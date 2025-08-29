@@ -3,6 +3,7 @@ import '../modelos/usuario.dart';
 import '../modelos/estoria.dart';
 import 'package:cached_network_image/cached_network_image.dart'; // Para imagens com cache
 import '../uteis/paleta_cores.dart';
+import '/componentes/imagem_perfil.dart';
 
 
 class AreaStoria extends StatelessWidget {
@@ -111,8 +112,25 @@ class CartaoEstoria extends StatelessWidget {
                                 onPressed: (){},
                             ), // IconButton
                         ) // Container
-                        : Container()
+                        : ImagemPerfil(
+                            urlImagem: estoria.usuario.urlImagem,
+                            foiVisualizado: estoria.foiVisualizado,
+                        ),
                 ), // Positioned
+                Positioned(
+                    bottom: 8,
+                    left: 8,
+                    right: 8,
+                    child: Text(
+                        adicionarEstoria ? "Criar Story" : estoria.usuario.nome, 
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                        ), // TextStyle
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                    ) // Text
+                )
             ] 
         );
     }
