@@ -63,6 +63,7 @@ class AreaStoria extends StatelessWidget {
 class CartaoEstoria extends StatelessWidget {
 
     final Estoria estoria;
+    final bool adicionarEstoria;
 
     const CartaoEstoria({
         Key? key,
