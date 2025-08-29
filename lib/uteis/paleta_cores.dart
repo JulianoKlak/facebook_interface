@@ -7,6 +7,11 @@ class PaletaCores {
   static const Color cinzaEscuro = Color(0xFF606770);
   static const Color preto = Colors.black;
   static const Color vermelho = Colors.red;
+  static const LinearGradient degradeEstoria = LinearGradient(
+    colors: [Colors.transparent, Colors.black54],
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+  );
 }
 
 // class PaletaCores {
